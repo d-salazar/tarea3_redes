@@ -1,4 +1,4 @@
-#!/usr/local/bin/python2.7
+#!/usr/local/bin/python
 
 """ seccion2.py: Programa que resuelve el problema presentado en la seccion 2 de la tarea 3 de redes, 2014-1"""
 
@@ -27,7 +27,7 @@ def main():
 		'e': { 'b': 8, 'd': 9, 'f': 2, 'i': 1},
 		'f': { 'd': 4, 'e': 2, 'h': 6},
 		'g': { 'a': 4, 'h': 7},
-		'h': { 'f': 6, 'g': 7}, 				# enlace con i eliminado
+		'h': { 'f': 6, 'g': 7}, 	# enlace con i eliminado
 		'i': { 'a':10, 'd': 2, 'e': 1} 	# enlace con h eliminado
 	}
 	distancia = {}
@@ -36,11 +36,11 @@ def main():
 	for nodo in grafo:
 		distancia[nodo], predecesor[nodo] = algoritmo(grafo,nodo)
 
-	print 'Via\Distancia', grafo.keys()
-	print '-'*60
+	print ('Via\Distancia', grafo.keys())
+	print ('-'*60)
 	
 	for nodo in grafo:
-		print str(nodo),' |',' '*8,distancia[nodo].values()
+		print (str(nodo),' |',' '*8,distancia[nodo].values())
 
 	return 0
 
