@@ -1,4 +1,4 @@
-#!/usr/local/bin/python2.7
+#!/usr/local/bin/python
 
 """ seccion2.py: Programa que resuelve el problema presentado en la seccion 2 de la tarea 3 de redes, 2014-1"""
 
